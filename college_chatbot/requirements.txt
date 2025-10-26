@@ -1,7 +1,0 @@
-Flask
-python-dotenv
-google-generativeai
-gTTS
-langdetect
-requests
-beautifulsoup4
