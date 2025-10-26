@@ -1,0 +1,4 @@
+[Role or Context]
+[Task or Goal]
+[Specific Requirements or Constraints]
+[Desired Output Format]

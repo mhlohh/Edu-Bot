@@ -1,0 +1,1383 @@
+[
+    {
+        "category": "Top India",
+        "rank": 1,
+        "name": "Hindu College, Delhi",
+        "city": "Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom"
+        ],
+        "fees_structure": {
+            "BA": {
+                "fee_per_year_in_inr": 1000,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 3000
+            },
+            "BSc": {
+                "fee_per_year_in_inr": 1000,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 3000
+            },
+            "BCom": {
+                "fee_per_year_in_inr": 1200,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 3600
+            }
+        },
+        "website": "https://www.hinducollege.ac.in/",
+        "google_maps": "https://goo.gl/maps/4Z2x8Ff5xQJ2"
+    },
+    {
+        "category": "Top India",
+        "rank": 2,
+        "name": "Miranda House, Delhi",
+        "city": "Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "Commerce"
+        ],
+        "fees_structure": {
+            "BA": {
+                "fee_per_year_in_inr": 1200,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 3600
+            },
+            "BSc": {
+                "fee_per_year_in_inr": 1500,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 4500
+            },
+            "Commerce": {
+                "fee_per_year_in_inr": 1300,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 3900
+            }
+        },
+        "website": "https://www.mirandahouse.ac.in/",
+        "google_maps": "https://goo.gl/maps/2D7Q9Y2t6a72"
+    },
+    {
+        "category": "Top India",
+        "rank": 3,
+        "name": "Hansraj College, Delhi",
+        "city": "Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom"
+        ],
+        "fees_structure": {
+            "BA": {
+                "fee_per_year_in_inr": 1200,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 3600
+            },
+            "BSc": {
+                "fee_per_year_in_inr": 1500,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 4500
+            },
+            "BCom": {
+                "fee_per_year_in_inr": 1400,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 4200
+            }
+        },
+        "website": "https://www.hansrajcollege.ac.in/",
+        "google_maps": "https://goo.gl/maps/7RzWkZ2z2v62"
+    },
+    {
+        "category": "Top India",
+        "rank": 4,
+        "name": "St. Stephen’s College, Delhi",
+        "city": "Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "Commerce",
+            "Honours"
+        ],
+        "fees_structure": {
+            "BA": {
+                "fee_per_year_in_inr": 1300,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 3900
+            },
+            "BSc": {
+                "fee_per_year_in_inr": 1600,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 4800
+            },
+            "Commerce": {
+                "fee_per_year_in_inr": 1400,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 4200
+            }
+        },
+        "website": "https://www.ststephens.edu/",
+        "google_maps": "https://goo.gl/maps/8J3V4v6v6J72"
+    },
+    {
+        "category": "Top India",
+        "rank": 5,
+        "name": "Kirori Mal College, Delhi",
+        "city": "Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom"
+        ],
+        "fees_structure": {
+            "BA": {
+                "fee_per_year_in_inr": 1100,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 3300
+            },
+            "BSc": {
+                "fee_per_year_in_inr": 1300,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 3900
+            },
+            "BCom": {
+                "fee_per_year_in_inr": 1250,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 3750
+            }
+        },
+        "website": "https://www.kmcollege.ac.in/",
+        "google_maps": "https://goo.gl/maps/3F3J7F7F7u72"
+    },
+    {
+        "category": "Kerala",
+        "rank": 6,
+        "name": "Amrita School of Arts & Sciences, Amritapuri",
+        "city": "Kollam",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom"
+        ],
+        "fees_structure": {
+            "BA": {
+                "fee_per_year_in_inr": 110000,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 330000
+            },
+            "BSc": {
+                "fee_per_year_in_inr": 120000,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 360000
+            },
+            "BCom": {
+                "fee_per_year_in_inr": 100000,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 300000
+            }
+        },
+        "website": "https://www.amrita.edu/school/asas/kochi/about",
+        "google_maps": "https://goo.gl/maps/4Z2x8Ff5xQJ2"
+    },
+    {
+        "category": "Kerala",
+        "rank": 7,
+        "name": "Amal Jyothi College of Engineering (AJCE)",
+        "city": "Kanjirappally",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 129000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 516000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 80000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 160000
+            }
+        },
+        "website": "https://www.ajce.in/",
+        "google_maps": "https://goo.gl/maps/2D7Q9Y2t6a72"
+    },
+    {
+        "category": "Kerala",
+        "rank": 8,
+        "name": "Cochin University of Science and Technology (CUSAT)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "MSc",
+            "PhD"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 100000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 400000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 90000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 180000
+            },
+            "MSc": {
+                "fee_per_year_in_inr": 60000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 120000
+            }
+        },
+        "website": "https://www.cusat.ac.in/",
+        "google_maps": "https://goo.gl/maps/7RzWkZ2z2v62"
+    },
+    {
+        "category": "Kerala",
+        "rank": 8,
+        "name": "Kerala University (University of Kerala)",
+        "city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "MSc",
+            "PhD"
+        ],
+        "fees_structure": {
+            "BA": {
+                "fee_per_year_in_inr": 8000,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 24000
+            },
+            "BSc": {
+                "fee_per_year_in_inr": 9000,
+                "duration_years": 3,
+                "total_estimated_fee_in_inr": 27000
+            },
+            "MSc": {
+                "fee_per_year_in_inr": 15000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 30000
+            }
+        },
+        "website": "https://www.keralauniversity.ac.in/",
+        "google_maps": "https://goo.gl/maps/1G5z4k8F8hT2"
+    },
+    {
+        "category": "Kerala",
+        "rank": 9,
+        "name": "TKM College of Engineering, Kollam",
+        "city": "Kollam",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 100000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 400000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 80000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 160000
+            }
+        },
+        "website": "https://www.tkmce.ac.in/",
+        "google_maps": "https://goo.gl/maps/QdXz6r1d1b72"
+    },
+    {
+        "category": "Bangalore",
+        "rank": 10,
+        "name": "RV College of Engineering (RVCE)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 235000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 940000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 110000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 220000
+            }
+        },
+        "website": "https://rvce.edu.in/",
+        "google_maps": "https://goo.gl/maps/5pVLNwBzRqH2"
+    },
+    {
+        "category": "Bangalore",
+        "rank": 11,
+        "name": "BMS College of Engineering (BMSCE)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 88000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 352000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 90000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 180000
+            }
+        },
+        "website": "https://bmsce.ac.in/",
+        "google_maps": "https://goo.gl/maps/7RUxvdsS8tL2"
+    },
+    {
+        "category": "Bangalore",
+        "rank": 12,
+        "name": "PES University, Bangalore",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "MBA",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 250000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 1000000
+            },
+            "MBA": {
+                "fee_per_year_in_inr": 400000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 800000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 120000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 240000
+            }
+        },
+        "website": "https://pes.edu/",
+        "google_maps": "https://goo.gl/maps/6Ff7k8kD8H22"
+    },
+    {
+        "category": "Bangalore",
+        "rank": 13,
+        "name": "MS Ramaiah Institute of Technology, Bangalore",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 150000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 600000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 100000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 200000
+            }
+        },
+        "website": "https://www.msrit.edu/",
+        "google_maps": "https://goo.gl/maps/5W3kH1kH5tP2"
+    },
+    {
+        "category": "Bangalore",
+        "rank": 14,
+        "name": "Bangalore Institute of Technology (BIT), Bangalore",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 120000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 480000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 90000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 180000
+            }
+        },
+        "website": "https://www.bit-bangalore.edu.in/",
+        "google_maps": "https://goo.gl/maps/6V4wG7kD5tR2"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 15,
+        "name": "Indian Institute of Technology Madras (IIT Madras)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "MS",
+            "PhD"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 200000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 800000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 150000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 300000
+            }
+        },
+        "website": "https://www.iitm.ac.in/",
+        "google_maps": "https://goo.gl/maps/A6bCdEfGhIjkLmnO"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 16,
+        "name": "Indian Institute of Technology Madras (IIT Madras)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "MBA",
+            "PhD"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 225000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 900000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 150000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 300000
+            },
+            "MBA": {
+                "fee_per_year_in_inr": 250000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 500000
+            }
+        },
+        "website": "https://www.iitm.ac.in/",
+        "google_maps": "https://goo.gl/maps/nk4o7o2xYw72"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 17,
+        "name": "Anna University, Chennai",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.E",
+            "B.Tech",
+            "M.Tech",
+            "MBA",
+            "MCA"
+        ],
+        "fees_structure": {
+            "B.E": {
+                "fee_per_year_in_inr": 75000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 300000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 60000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 120000
+            },
+            "MBA": {
+                "fee_per_year_in_inr": 50000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 100000
+            }
+        },
+        "website": "https://www.annauniv.edu/",
+        "google_maps": "https://goo.gl/maps/3J8FhU2q5eB2"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 18,
+        "name": "Vellore Institute of Technology (VIT), Vellore",
+        "city": "Vellore",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "MBA",
+            "BSc"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 195000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 780000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 175000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 350000
+            },
+            "MBA": {
+                "fee_per_year_in_inr": 300000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 600000
+            }
+        },
+        "website": "https://vit.ac.in/",
+        "google_maps": "https://goo.gl/maps/Fa8tqA6nExM2"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 19,
+        "name": "PSG College of Technology, Coimbatore",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.E",
+            "B.Tech",
+            "M.Tech",
+            "MBA"
+        ],
+        "fees_structure": {
+            "B.E": {
+                "fee_per_year_in_inr": 87000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 348000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 75000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 150000
+            },
+            "MBA": {
+                "fee_per_year_in_inr": 100000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 200000
+            }
+        },
+        "website": "https://www.psgtech.edu/",
+        "google_maps": "https://goo.gl/maps/5bH3yZbG8r42"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 20,
+        "name": "SRM Institute of Science and Technology (SRMIST), Kattankulathur",
+        "city": "Kanchipuram",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "MBA",
+            "MBBS"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 250000,
+                "duration_years": 4,
+                "total_estimated_fee_in_inr": 1000000
+            },
+            "M.Tech": {
+                "fee_per_year_in_inr": 175000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 350000
+            },
+            "MBA": {
+                "fee_per_year_in_inr": 350000,
+                "duration_years": 2,
+                "total_estimated_fee_in_inr": 700000
+            }
+        },
+        "website": "https://www.srmist.edu.in/",
+        "google_maps": "https://goo.gl/maps/PYj3L4gC6X82"
+    },
+    {
+        "category": "Kerala",
+        "rank": 1,
+        "name": "Indian Institute of Technology Palakkad (IIT Palakkad)",
+        "city": "Palakkad",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "PhD"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 90000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.iitpkd.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/IIT+Palakkad"
+    },
+    {
+        "category": "Kerala",
+        "rank": 2,
+        "name": "National Institute of Technology Calicut (NIT Calicut)",
+        "city": "Calicut (Kozhikode)",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "PhD"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 100000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.nitc.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/NIT+Calicut"
+    },
+    {
+        "category": "Kerala",
+        "rank": 3,
+        "name": "Cochin University of Science and Technology (CUSAT)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "MSc",
+            "PhD"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 90000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.cusat.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/CUSAT"
+    },
+    {
+        "category": "Kerala",
+        "rank": 4,
+        "name": "College of Engineering, Trivandrum (CET)",
+        "city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 85000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://cet.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/College+of+Engineering+Trivandrum"
+    },
+    {
+        "category": "Kerala",
+        "rank": 5,
+        "name": "Amrita Vishwa Vidyapeetham (Amrita School of Arts & Sciences / Amritapuri campus)",
+        "city": "Kollam/Amritapuri",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom",
+            "B.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 110000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.amrita.edu/",
+        "google_maps": "https://www.google.com/maps/place/Amrita+Vishwa+Vidyapeetham"
+    },
+    {
+        "category": "Kerala",
+        "rank": 6,
+        "name": "Rajagiri School of Engineering & Technology (RSET)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 120000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://rajagiritech.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/Rajagiri+School+of+Engineering+%26+Technology"
+    },
+    {
+        "category": "Kerala",
+        "rank": 7,
+        "name": "Government Engineering College, Thrissur (GEC Thrissur)",
+        "city": "Thrissur",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 70000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.gectcr.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/Government+Engineering+College+Thrissur"
+    },
+    {
+        "category": "Kerala",
+        "rank": 8,
+        "name": "TKM College of Engineering (TKMCE)",
+        "city": "Kollam",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 90000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.tkmce.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/TKM+College+of+Engineering"
+    },
+    {
+        "category": "Kerala",
+        "rank": 9,
+        "name": "Maharaja's College, Ernakulam",
+        "city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom",
+            "MA",
+            "MSc"
+        ],
+        "fees_structure": {
+            "UG_general": {
+                "fee_per_year_in_inr": 10000,
+                "duration_years": 3
+            }
+        },
+        "website": "https://maharajas.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/Maharaja's+College+Ernakulam"
+    },
+    {
+        "category": "Kerala",
+        "rank": 10,
+        "name": "St. Teresa's College, Ernakulam",
+        "city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom",
+            "MA"
+        ],
+        "fees_structure": {
+            "UG_general": {
+                "fee_per_year_in_inr": 12000,
+                "duration_years": 3
+            }
+        },
+        "website": "https://teresas.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/St.+Teresa's+College+Ernakulam"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 1,
+        "name": "Indian Institute of Technology Madras (IIT Madras)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "MBA",
+            "PhD"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 225000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.iitm.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/IIT+Madras"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 2,
+        "name": "Anna University",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.E",
+            "B.Tech",
+            "M.Tech",
+            "MBA"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 75000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.annauniv.edu/",
+        "google_maps": "https://www.google.com/maps/place/Anna+University"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 3,
+        "name": "National Institute of Technology, Tiruchirappalli (NIT Trichy)",
+        "city": "Tiruchirappalli",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "PhD"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 100000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.nitt.edu/",
+        "google_maps": "https://www.google.com/maps/place/NIT+Tiruchirappalli"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 4,
+        "name": "Vellore Institute of Technology (VIT)",
+        "city": "Vellore",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "MBA"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 195000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://vit.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/VIT+Vellore"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 5,
+        "name": "PSG College of Technology",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.E",
+            "M.Tech",
+            "MBA"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 87000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.psgtech.edu/",
+        "google_maps": "https://www.google.com/maps/place/PSG+College+of+Technology"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 6,
+        "name": "SRM Institute of Science and Technology (SRMIST)",
+        "city": "Kattankulathur (Chengalpattu)",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "MBBS",
+            "MBA"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 250000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.srmist.edu.in/",
+        "google_maps": "https://www.google.com/maps/place/SRM+Institute+of+Science+and+Technology"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 7,
+        "name": "Madras Christian College (MCC)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom",
+            "MA"
+        ],
+        "fees_structure": {
+            "UG_general": {
+                "fee_per_year_in_inr": 15000,
+                "duration_years": 3
+            }
+        },
+        "website": "https://www.mcc.edu.in/",
+        "google_maps": "https://www.google.com/maps/place/Madras+Christian+College"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 8,
+        "name": "Loyola College, Chennai",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom",
+            "MA"
+        ],
+        "fees_structure": {
+            "UG_general": {
+                "fee_per_year_in_inr": 20000,
+                "duration_years": 3
+            }
+        },
+        "website": "https://www.loyolacollege.edu/",
+        "google_maps": "https://www.google.com/maps/place/Loyola+College+Chennai"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 9,
+        "name": "Thiagarajar College of Engineering (TCE)",
+        "city": "Madurai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.E",
+            "M.E",
+            "PhD"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 90000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.tce.edu/",
+        "google_maps": "https://www.google.com/maps/place/Thiagarajar+College+of+Engineering"
+    },
+    {
+        "category": "Tamil Nadu",
+        "rank": 10,
+        "name": "Anna University - College of Engineering Guindy (CEG)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "courses": [
+            "B.E",
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 80000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.annauniv.edu/",
+        "google_maps": "https://www.google.com/maps/place/College+of+Engineering+Guindy"
+    },
+    {
+        "category": "Karnataka",
+        "rank": 1,
+        "name": "Indian Institute of Science (IISc) Bangalore",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Sc",
+            "M.Sc",
+            "M.Tech",
+            "PhD"
+        ],
+        "fees_structure": {
+            "M.Tech": {
+                "fee_per_year_in_inr": 100000,
+                "duration_years": 2
+            }
+        },
+        "website": "https://iisc.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/IISc+Bengaluru"
+    },
+    {
+        "category": "Karnataka",
+        "rank": 2,
+        "name": "National Institute of Technology Karnataka (NITK), Surathkal",
+        "city": "Mangaluru (Surathkal)",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "PhD"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 100000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.nitk.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/NITK+Surathkal"
+    },
+    {
+        "category": "Karnataka",
+        "rank": 3,
+        "name": "R.V. College of Engineering (RVCE)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 235000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://rvce.edu.in/",
+        "google_maps": "https://www.google.com/maps/place/RV+College+of+Engineering"
+    },
+    {
+        "category": "Karnataka",
+        "rank": 4,
+        "name": "BMS College of Engineering (BMSCE)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 88000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://bmsce.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/BMS+College+of+Engineering"
+    },
+    {
+        "category": "Karnataka",
+        "rank": 5,
+        "name": "PES University (PESU)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "MBA",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 200000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://pes.edu/",
+        "google_maps": "https://www.google.com/maps/place/PES+University"
+    },
+    {
+        "category": "Karnataka",
+        "rank": 6,
+        "name": "MS Ramaiah Institute of Technology (MSRIT)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 150000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.msrit.edu/",
+        "google_maps": "https://www.google.com/maps/place/MS+Ramaiah+Institute+of+Technology"
+    },
+    {
+        "category": "Karnataka",
+        "rank": 7,
+        "name": "Christ University",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "BBA",
+            "B.Com",
+            "B.Sc",
+            "B.Tech",
+            "MBA"
+        ],
+        "fees_structure": {
+            "UG_general": {
+                "fee_per_year_in_inr": 120000,
+                "duration_years": 3
+            }
+        },
+        "website": "https://christuniversity.in/",
+        "google_maps": "https://www.google.com/maps/place/Christ+University"
+    },
+    {
+        "category": "Karnataka",
+        "rank": 8,
+        "name": "Manipal Institute of Technology (MIT), Manipal",
+        "city": "Manipal",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 200000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://manipal.edu/mit.html",
+        "google_maps": "https://www.google.com/maps/place/Manipal+Institute+of+Technology"
+    },
+    {
+        "category": "Karnataka",
+        "rank": 9,
+        "name": "Bangalore Institute of Technology (BIT)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 120000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://www.bit-bangalore.edu.in/",
+        "google_maps": "https://www.google.com/maps/place/Bangalore+Institute+of+Technology"
+    },
+    {
+        "category": "Karnataka",
+        "rank": 10,
+        "name": "JSS Science and Technology University / JSS Academy of Technical Education (JSSATE)",
+        "city": "Mysuru/Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech"
+        ],
+        "fees_structure": {
+            "B.Tech": {
+                "fee_per_year_in_inr": 120000,
+                "duration_years": 4
+            }
+        },
+        "website": "https://jssstuniv.in/",
+        "google_maps": "https://www.google.com/maps/search/JSS+Academy+of+Technical+Education"
+    },
+    {
+        "category": "Kochi",
+        "rank": 1,
+        "name": "Cochin University of Science and Technology (CUSAT)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "B.Tech",
+            "M.Tech",
+            "MSc",
+            "PhD"
+        ],
+        "fees_structure": {
+            "UG_general": {
+                "fee_per_year_in_inr": 30000,
+                "duration_years": 3
+            }
+        },
+        "website": "https://www.cusat.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/CUSAT"
+    },
+    {
+        "category": "Kochi",
+        "rank": 2,
+        "name": "Rajagiri College of Social Sciences / Rajagiri Group (RSET, Rajagiri)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "BBA",
+            "B.Com",
+            "B.Tech",
+            "MBA"
+        ],
+        "fees_structure": {
+            "UG_general": {
+                "fee_per_year_in_inr": 100000,
+                "duration_years": 3
+            }
+        },
+        "website": "https://rajagiritech.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/Rajagiri+Group+of+Institutions"
+    },
+    {
+        "category": "Kochi",
+        "rank": 3,
+        "name": "St. Teresa's College, Ernakulam",
+        "city": "Kochi (Ernakulam)",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom"
+        ],
+        "fees_structure": {
+            "UG_general": {
+                "fee_per_year_in_inr": 12000,
+                "duration_years": 3
+            }
+        },
+        "website": "https://teresas.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/St.+Teresa's+College+Ernakulam"
+    },
+    {
+        "category": "Kochi",
+        "rank": 4,
+        "name": "Maharaja's College, Ernakulam",
+        "city": "Kochi (Ernakulam)",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom"
+        ],
+        "fees_structure": {
+            "UG_general": {
+                "fee_per_year_in_inr": 10000,
+                "duration_years": 3
+            }
+        },
+        "website": "https://maharajas.ac.in/",
+        "google_maps": "https://www.google.com/maps/place/Maharaja's+College+Ernakulam"
+    },
+    {
+        "category": "Kochi",
+        "rank": 5,
+        "name": "Sacred Heart College, Thevara",
+        "city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "courses": [
+            "BA",
+            "BSc",
+            "BCom"
+        ],
+        "fees_structure": {
+            "UG_general": {
+                "fee_per_year_in_inr": 12000,
+                "duration_years": 3
+            }
+        },
+        "website": "https://www.sacredheartcollege.edu.in/",
+        "google_maps": "https://www.google.com/maps/place/Sacred+Heart+College+Thevara"
+    }
+]

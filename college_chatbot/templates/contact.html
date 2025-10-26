@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-section fade-in" style="max-width:700px;">
+  <h2>Contact Us</h2>
+  <form action="{{ url_for('send_message') }}" method="POST" class="contact-form glass-card" style="margin-top:18px;">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="contact-btn">Send Message</button>
+  </form>
+</section>
+{% endblock %}

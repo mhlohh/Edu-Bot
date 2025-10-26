@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="page-section fade-in">
+  <h2>❓ Frequently Asked Questions</h2>
+  <p style="max-width:700px;margin:0 auto 30px;">
+    Here are some of the most common questions students ask during the college admission process.  
+    If you don’t find your answer here, feel free to ask the chatbot below 👇
+  </p>
+
+  <div class="faq-container">
+    {% for f in faqs %}
+    <div class="faq-item">
+      <button class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+        {{ loop.index }}. {{ f.q }}
+      </button>
+      <div class="faq-answer">
+        <p>{{ f.a }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

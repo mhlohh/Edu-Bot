@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ title }} | EduGuide AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+      <div class="logo">🎓 EduGuide AI</div>
+      <div class="links" role="navigation" aria-label="Main navigation">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('colleges_page') }}">Top Colleges</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('faq') }}">FAQ</a>
+        {% if session.get('admin_logged_in') %}
+          <a href="{{ url_for('admin_dashboard') }}">📊 Dashboard</a>
+          <a href="{{ url_for('admin_logout') }}">🚪 Logout</a>
+        {% else %}
+          <a href="{{ url_for('admin_login') }}">🔐 Login</a>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content" class="container" role="main">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Footer with contact info (bottom of every page) -->
+  <footer>
+    <div class="contact-details">
+      <div class="contact-item"><i class="fa-solid fa-phone"></i> +91 98765 43210</div>
+      <div class="contact-item"><i class="fa-solid fa-envelope"></i> support@eduguide.in</div>
+      <div class="contact-item"><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/eduguide" target="_blank">@eduguide</a></div>
+      <div class="contact-item"><i class="fa-brands fa-x-twitter"></i> <a href="https://x.com/eduguide" target="_blank">@EduGuide</a></div>
+    </div>
+    <p>© 2025 EduGuide AI</p>
+  </footer>
+
+  <!-- 🤖 Chatbot Popup -->
+<div id="chat-popup" class="chat-popup" role="dialog" aria-label="EduGuide chat" aria-hidden="true">
+  <div class="chat-header" role="banner">
+    <div class="avatar" aria-hidden="true">AI</div>
+    <div style="flex:1">
+      <div class="title">EduGuide Assistant</div>
+      <div class="subtitle">Get college suggestions, fees &amp; FAQs</div>
+    </div>
+    <div class="controls" role="group" aria-label="Chat controls">
+      <button title="Minimize" onclick="toggleChat()" aria-label="Close chat">✖</button>
+    </div>
+  </div>
+
+  <div id="chat-box" class="chat-box" role="log" aria-live="polite">
+    <div class="bot-message">👋 Hi! I'm EduGuide AI. Ask me about colleges, courses, or fees.</div>
+  </div>
+
+  <div class="quick-menu" role="toolbar" aria-label="Quick actions">
+    <button class="chip" onclick="quickAsk('Show colleges in Kochi for CSE under 120000')">Kochi • CSE • ₹1.2L</button>
+    <button class="chip" onclick="quickAsk('Fees for AI & DS in Trivandrum colleges')">Fees • AI&DS • TVM</button>
+    <button class="chip" onclick="quickAsk('Hostel facilities in Kochi colleges?')">🏨 Hostel</button>
+    <button class="chip" onclick="quickAsk('Required documents for admissions')">📑 Documents</button>
+  </div>
+
+  <div class="input-area">
+    <input type="text" id="user-input" placeholder="Type your question..." aria-label="Type your message">
+    <button class="btn" onclick="sendMessage()" title="Send message" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+    <button class="btn micro" onclick="startVoice()" title="Voice input" aria-label="Start voice input"><i class="fas fa-microphone"></i></button>
+  </div>
+</div>
+
+<button class="floating-chat-btn" id="floatingChatBtn" onclick="toggleChat()" aria-label="Open chat">
+  <span class="icon"><i class="fas fa-comments"></i></span>
+</button>
+
+<script>
+  // sync button open state with popup
+  function toggleChat() {
+    const popup = document.getElementById('chat-popup');
+    const btn = document.getElementById('floatingChatBtn');
+    popup.classList.toggle('show');
+    btn.classList.toggle('open');
+    // update aria-hidden
+    const opened = popup.classList.contains('show');
+    popup.setAttribute('aria-hidden', !opened);
+    if (opened) document.getElementById('user-input')?.focus();
+  }
+</script>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

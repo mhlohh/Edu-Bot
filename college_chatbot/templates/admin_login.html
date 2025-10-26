@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-section fade-in" style="max-width: 500px; margin: 120px auto; text-align: center;">
+  <h2>🔐 Admin Login</h2>
+  <form action="{{ url_for('admin_login') }}" method="POST" style="display:flex; flex-direction:column; gap:15px; margin-top:30px;">
+    <input type="text" name="username" placeholder="👤 Username" required style="padding:12px; border-radius:10px; border:1px solid #ccc;">
+    <input type="password" name="password" placeholder="🔑 Password" required style="padding:12px; border-radius:10px; border:1px solid #ccc;">
+    <button type="submit" style="padding:12px; border-radius:10px; background:#8C1515; color:#fff; font-size:1.05rem; cursor:pointer;">Login</button>
+  </form>
+</section>
+{% endblock %}
