@@ -36,19 +36,21 @@ def _load_json(path: Path):
         logger.exception("Failed to load JSON %s: %s", path, e)
         return []
 
-# preload data (safe to re-load on demand if large)
+# preload data
 colleges = _load_json(COLLEGES_FILE)
 faqs = _load_json(FAQ_FILE)
 
-@app.route("/")
+# map the index view to the endpoint name "home" (templates expect url_for('home'))
+@app.route("/", endpoint="home")
 def index():
     return render_template("index.html", colleges=colleges[:20])
 
 @app.route("/faq")
 def faq():
-    # ensure faqs is a list of dicts with 'question'/'answer' or 'q'/'a'
     normalized = []
     for item in faqs:
+        if not isinstance(item, dict):
+            continue
         q = item.get("q") or item.get("question") or "Question"
         a = item.get("a") or item.get("answer") or "Answer not available."
         normalized.append({"q": q, "a": a})
@@ -58,19 +60,14 @@ def faq():
 def health():
     return jsonify({"ok": True, "gemini_configured": bool(GEMINI_API_KEY)})
 
-# example endpoint that would call your AI layer server-side (placeholder)
 @app.route("/api/query", methods=["POST"])
 def api_query():
     data = request.json or {}
     query = data.get("q", "").strip()
     if not query:
         return jsonify({"error": "empty query"}), 400
-
-    # Do server-side AI call here using GEMINI_API_KEY (never expose key to client)
-    # Example placeholder response:
-    resp = {"answer": f"Received: {query}", "source": "stub"}
-    return jsonify(resp)
+    # TODO: call Google Generative AI / other service here using GEMINI_API_KEY
+    return jsonify({"answer": f"Received: {query}", "source": "stub"})
 
 if __name__ == "__main__":
-    # dev server only
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)), debug=True)
