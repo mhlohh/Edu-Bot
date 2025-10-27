@@ -69,5 +69,14 @@ def api_query():
     # TODO: call Google Generative AI / other service here using GEMINI_API_KEY
     return jsonify({"answer": f"Received: {query}", "source": "stub"})
 
+@app.route("/colleges", endpoint="colleges_page")
+def colleges_page():
+    # pass the colleges list (adjust slicing/filters as needed)
+    return render_template("colleges.html", colleges=colleges)
+
+@app.route("/about", endpoint="about")
+def about():
+    return render_template("about.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)), debug=True)
