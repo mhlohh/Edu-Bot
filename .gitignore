@@ -20,6 +20,7 @@ env/
 # OS
 .DS_Store
 
+<<<<<<< HEAD
 name: CI & optional Render deploy
 
 on:
@@ -85,3 +86,24 @@ PY
             -H "Accept: application/json" \
             -d '{}' \
             | jq .
+=======
+# Procfile
+web: gunicorn app:app --bind 0.0.0.0:$PORT
+
+# Requirements
+Flask
+python-dotenv
+google-generativeai
+gTTS
+langdetect
+requests
+beautifulsoup4
+gunicorn
+
+# from project root
+rm .env
+
+# secrets
+gh secret set GEMINI_API_KEY --body "NEW_KEY" --repo mhlohh/Edu-Bot
+gh secret set FLASK_SECRET --body "a_strong_secret" --repo mhlohh/Edu-Bot
+>>>>>>> 65f9f20 (Prepare for deployment: clean .gitignore, add Procfile, add gunicorn)
