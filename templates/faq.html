@@ -1,25 +1,71 @@
 {% extends "base.html" %}
+
+{% block title %}FAQ{% endblock %}
+
 {% block content %}
+<div class="faq-page" style="max-width:920px;margin:20px auto;padding:0 16px;">
+  <h1 style="margin:12px 0 18px;font-size:28px;">Frequently Asked Questions</h1>
 
-<section class="page-section fade-in">
-  <h2>❓ Frequently Asked Questions</h2>
-  <p style="max-width:700px;margin:0 auto 30px;">
-    Here are some of the most common questions students ask during the college admission process.  
-    If you don’t find your answer here, feel free to ask the chatbot below 👇
-  </p>
-
-  <div class="faq-container">
-    {% for f in faqs %}
-    <div class="faq-item">
-      <button class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
-        {{ loop.index }}. {{ f.q }}
-      </button>
-      <div class="faq-answer">
-        <p>{{ f.a }}</p>
-      </div>
+  {% if faqs and faqs|length > 0 %}
+    <div class="faq-list" id="faqList" style="display:grid;gap:12px;">
+      {% for f in faqs %}
+        {% set q = (f.q if f.q is defined else (f.question if f.question is defined else 'Question')) %}
+        {% set a = (f.a if f.a is defined else (f.answer if f.answer is defined else 'Answer not available.')) %}
+        <div class="faq-item" data-index="{{ loop.index0 }}" style="background:#fff;border:1px solid #e6edf7;border-radius:10px;padding:14px;box-shadow:0 1px 2px rgba(15,23,42,0.03);">
+          <div class="faq-q" tabindex="0" role="button" aria-expanded="false" style="display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;">
+            <h3 style="margin:0;font-size:16px;">{{ q }}</h3>
+            <div class="chev" style="transition:transform .18s ease;color:#2563eb;font-weight:600;">▸</div>
+          </div>
+          <div class="faq-a" style="margin-top:10px;color:#0b1220;line-height:1.6;display:none;padding-top:6px;border-top:1px dashed #e6edf7;">
+            <div class="answer-text">{{ a | safe }}</div>
+            <div class="meta" style="font-size:13px;color:#6b7280;margin-top:6px;">Was this helpful? You can leave a short comment below.</div>
+            <form class="feedback" onsubmit="handleFeedback(event, {{ loop.index0 }})" style="margin-top:12px;display:flex;gap:8px;align-items:flex-start;">
+              <textarea name="comment" placeholder="Leave a quick comment (optional)" style="flex:1;min-height:56px;padding:8px;border:1px solid #e6edf7;border-radius:6px;font-size:14px;resize:vertical;"></textarea>
+              <button type="submit" style="background:#2563eb;color:white;border:0;padding:10px 14px;border-radius:6px;cursor:pointer;">Send</button>
+            </form>
+          </div>
+        </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
-</section>
+  {% else %}
+    <div style="padding:28px;text-align:center;color:#6b7280;background:linear-gradient(180deg,#fff,#fbfdff);border-radius:10px;border:1px solid #e6edf7;">No FAQ items found. Please add entries to data/faq.json</div>
+  {% endif %}
+</div>
+{% endblock %}
 
+{% block scripts %}
+<script>
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    const q = item.querySelector('.faq-q');
+    q.addEventListener('click', ()=> toggle(item));
+    q.addEventListener('keydown', (e)=> { if(e.key==='Enter' || e.key===' ') { e.preventDefault(); toggle(item); }});
+  });
+
+  function toggle(item){
+    const expanded = item.classList.toggle('open');
+    item.querySelector('.faq-q').setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    document.querySelectorAll('.faq-item').forEach(i=> {
+      if(i!==item) {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+        const a = i.querySelector('.faq-a'); if(a) a.style.display = 'none';
+        const chev = i.querySelector('.chev'); if(chev) chev.style.transform = '';
+      }
+    });
+    const ans = item.querySelector('.faq-a');
+    const chev = item.querySelector('.chev');
+    if(expanded){ if(ans) ans.style.display = 'block'; if(chev) chev.style.transform = 'rotate(90deg)'; }
+    else { if(ans) ans.style.display = 'none'; if(chev) chev.style.transform = ''; }
+  }
+
+  function handleFeedback(e, idx){
+    e.preventDefault();
+    const form = e.currentTarget;
+    const textarea = form.querySelector('textarea');
+    const val = textarea.value.trim();
+    if(!val){ alert('Thanks — no comment provided.'); }
+    else { alert('Comment submitted: ' + val); /* replace with real POST if needed */ }
+    textarea.value = '';
+  }
+</script>
 {% endblock %}

@@ -5,3 +5,4 @@ gTTS
 langdetect
 requests
 beautifulsoup4
+gunicorn
