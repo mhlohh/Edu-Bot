@@ -7,9 +7,15 @@ import google.generativeai as genai
 app = Flask(__name__)
 app.secret_key = os.getenv("FLASK_SECRET", "super_secret_key")
 
-load_dotenv()
+load_dotenv()  # loads local .env for dev only
+
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-print("🔑 Gemini API Key present:", bool(GEMINI_API_KEY))
+FLASK_SECRET = os.getenv("FLASK_SECRET", "dev_secret_here")
+
+# minimal non-sensitive startup log
+import logging
+logging.basicConfig(level=logging.INFO)
+logging.getLogger("app").info("Starting app; GEMINI key configured: %s", bool(GEMINI_API_KEY))
 
 if GEMINI_API_KEY:
     try:
