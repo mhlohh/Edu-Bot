@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Create venv",
+            "type": "shell",
+            "command": "python -m venv .venv",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Install requirements",
+            "type": "shell",
+            "command": ".venv\\Scripts\\Activate.ps1; python -m pip install --upgrade pip; pip install -r requirements.txt",
+            "dependsOn": "Create venv",
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Run app",
+            "type": "shell",
+            "command": ".venv\\Scripts\\Activate.ps1; python app.py",
+            "presentation": {
+                "reveal": "always"
+            }
+        }
+    ]
+}

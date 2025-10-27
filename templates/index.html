@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- 🌟 Hero Section (restored simple layout) -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-text">
+      <h1>Find the right college for your future</h1>
+      <p class="subtitle">Explore verified colleges, compare fees & courses, get AI suggestions — all in one place.</p>
+
+      <form class="hero-search" action="{{ url_for('colleges_page') }}" method="get" role="search"
+        aria-label="Search colleges">
+        <input name="search" type="search" placeholder="Search for colleges, exams, courses and more..."
+          aria-label="Search" />
+        <button type="submit" class="btn primary">Search</button>
+      </form>
+
+      <div class="hero-quick">
+        <a class="chip" href="{{ url_for('colleges_page') }}?location=Kochi&course=CSE">Kochi • CSE</a>
+        <a class="chip" href="{{ url_for('colleges_page') }}?course=AI">Top AI Programs</a>
+        <a class="chip" href="{{ url_for('faq') }}">Admissions FAQ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="page-section fade-in" style="margin-top: 120px;">
+
+  <!-- 🧠 Filter Bar -->
+  <form action="/colleges" method="get" class="filters">
+    <input type="text" name="location" placeholder="📍 Location (e.g., Chennai)">
+    <input type="text" name="course" placeholder="💻 Course (e.g., CSE, AI)">
+    <input type="number" name="budget" placeholder="💸 Max Fee / year (₹)">
+    <select name="sort">
+      <option value="rank">Sort by Rank</option>
+      <option value="fee">Sort by Fee</option>
+      <option value="name">Sort by Name</option>
+    </select>
+    <button type="submit" class="details-btn">Search Colleges</button>
+  </form>
+
+  <!-- 🏆 Top Colleges List -->
+  <h2 style="text-align:center; margin-top:40px;">🏫 Top Colleges in India</h2>
+
+  <div class="college-list">
+    {% for c in colleges %}
+    <div class="college-item">
+      <div class="rank-badge">{{ c.rank or 'N/A' }}</div>
+      <div class="college-info">
+        <h2><a class="college-link" href="{{ c.website }}" target="_blank">{{ c.name }}</a></h2>
+        <p>📍 {{ c.city }}, {{ c.state }}</p>
+
+        {% if c.courses %}
+        <p><strong>🎓 Courses:</strong> {{ c.courses | join(', ') }}</p>
+        {% endif %}
+
+        {% set min_fee = None %}
+        {% if c.fees_structure %}
+        {% for course, fee_data in c.fees_structure.items() %}
+        {% set v = fee_data.get('fee_per_year_in_inr') or fee_data.get('total_estimated_fee_in_inr') or
+        fee_data.get('fee') %}
+        {% if v is defined and v %}
+        {% if min_fee is none or v < min_fee %} {% set min_fee=v %} {% endif %} {% endif %} {% endfor %} {% endif %} {%
+          if min_fee %} <p><strong>💸 Min Fee:</strong> ₹{{ min_fee }}</p>
+          {% endif %}
+
+          <a href="{{ c.website }}" target="_blank" class="details-btn">Visit Website</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% if colleges|length == 0 %}
+  <p style="text-align:center; margin-top: 50px;">❌ No colleges found. Try adjusting your filters.</p>
+  {% endif %}
+
+</section>
+
+{% endblock %}
