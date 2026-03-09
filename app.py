@@ -4,6 +4,7 @@ import logging
 from pathlib import Path
 from dotenv import load_dotenv
 from flask import Flask, render_template, request, jsonify, redirect, url_for, flash
+from ai.chatbot import get_chat_response
 
 # load local .env for development only (ignored by git)
 load_dotenv()
@@ -66,8 +67,18 @@ def api_query():
     query = data.get("q", "").strip()
     if not query:
         return jsonify({"error": "empty query"}), 400
-    # TODO: call Google Generative AI / other service here using GEMINI_API_KEY
-    return jsonify({"answer": f"Received: {query}", "source": "stub"})
+    answer = get_chat_response(query)
+    return jsonify({"answer": answer, "source": "gemini"})
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    data = request.json or {}
+    message = data.get("message", "").strip()
+    language = data.get("language", "en")
+    if not message:
+        return jsonify({"error": "empty message"}), 400
+    response = get_chat_response(message, language)
+    return jsonify({"response": response})
 
 @app.route("/colleges", endpoint="colleges_page")
 def colleges_page():
@@ -77,6 +88,47 @@ def colleges_page():
 @app.route("/about", endpoint="about")
 def about():
     return render_template("about.html")
+
+@app.route("/contact", endpoint="contact")
+def contact():
+    return render_template("contact.html")
+
+@app.route("/contact/send", endpoint="send_message", methods=["POST"])
+def send_message():
+    name = request.form.get("name", "").strip()
+    email = request.form.get("email", "").strip()
+    message = request.form.get("message", "").strip()
+    logger.info("Contact form: name=%s email=%s", name, email)
+    flash(f"Thanks {name}! Your message has been received.", "success")
+    return redirect(url_for("contact"))
+
+@app.route("/courses", endpoint="courses")
+def courses():
+    return render_template("courses.html")
+
+@app.route("/admin/login", endpoint="admin_login", methods=["GET", "POST"])
+def admin_login():
+    if request.method == "POST":
+        password = request.form.get("password", "")
+        if password == os.getenv("ADMIN_PASSWORD", "admin"):
+            from flask import session
+            session["admin_logged_in"] = True
+            return redirect(url_for("admin_dashboard"))
+        flash("Invalid password", "error")
+    return render_template("admin_login.html")
+
+@app.route("/admin/logout", endpoint="admin_logout")
+def admin_logout():
+    from flask import session
+    session.pop("admin_logged_in", None)
+    return redirect(url_for("home"))
+
+@app.route("/admin/dashboard", endpoint="admin_dashboard")
+def admin_dashboard():
+    from flask import session
+    if not session.get("admin_logged_in"):
+        return redirect(url_for("admin_login"))
+    return render_template("admin_dashboard.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)), debug=True)
